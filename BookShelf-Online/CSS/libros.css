@@ -1,0 +1,58 @@
+#libros{
+    background-color: transparent;
+    width: 95%;
+}
+.centrar{
+    float: left;
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    margin-top: 150px;
+    /*Contenedores Hijos Centrados*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#consulta{
+    float: left;
+    width:100%;
+    height: 100%;
+    background-color: transparent;
+    overflow: scroll;
+}
+
+#btn_libs{
+    float: left;
+    padding: 1px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: darkcyan;
+    color: white;
+}
+
+#btn_libs_red{
+    float: left;
+    padding: 9px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgb(162, 61, 61);
+    color: white;
+}
+
+#agregar{
+    float: left;
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    overflow-y: scroll;
+}
+
+#contenido{
+    margin-top: 50px;
+}
+
+#pie{
+    margin-top: 500px;
+}

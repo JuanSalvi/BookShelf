@@ -1,0 +1,7 @@
+#libros{
+    width: 80%;
+    height: 500px;
+    background-color: transparent;
+    margin-top: 150px;
+    overflow-y: scroll;
+}

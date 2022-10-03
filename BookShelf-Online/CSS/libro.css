@@ -1,0 +1,110 @@
+#contenido_libro{
+    width: 100%;
+    height: 900px;
+    background-color: white;
+    /*Contenedores Hijos Centrados*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #libro_todo{
+        width: 85%;
+        height: 100%;
+        background-color: transparent;
+        margin-top: 50px;
+    }
+        #imagen_libro{
+            float: left;
+            width: 33%;
+            height: 60%;
+            background-color: transparent;
+
+            /*Contenedores Hijos Centrados*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            #img{
+                width: 272px;
+                height: 464px;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        #informacion{
+            float: left;
+            width: 34%;
+            height: 60%;
+            background-color: transparent;
+        }
+            #titulo{
+                padding: 20px 20px;
+                font-family: Calibri;
+                font-size: 35px;
+                font-weight: bold;
+            }
+            .info{
+                padding: 20px 20px;
+                font-family: Calibri;
+                font-size: 20px;
+                line-height: 15px;
+            }
+
+        #pago{
+            float: left;
+            width: 33%;
+            height: 60%;
+            background-color: transparent;
+
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+        }
+            #precio{
+                padding: 20px 20px;
+                font-family: Calibri;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            #agregar_carrito{
+                padding: 15px 15px;
+                font-size: 17px;
+                font-weight: bold;
+                background-color: darkcyan;
+                color: white;
+            }
+            #compra_proveedor{
+                padding: 15px 15px;
+                font-size: 17px;
+                font-weight: bold;
+                background-color: darkcyan;
+                color: white;
+            }
+
+        #recomendacion{
+            float: left;
+            width: 100%;
+            height: 40%;
+            background-color: transparent;
+            margin-top: 100px;
+        }
+            .c_btn_rec{
+                float: left;
+                padding: 1px 25px;
+                font-size: 15px;
+                background-color: darkcyan;
+                color: white;
+                margin-right: 30px;
+            }
+
+            .c_titulo_rec{
+                font-size: 15px;
+                font-weight: normal;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+

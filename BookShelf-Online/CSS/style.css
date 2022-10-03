@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #212529;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Contenedor GLobal */
+#Contenedor{
+    /* Definicion de Tamaño */
+    width: 100%;
+    max-width: 2000px;
+    /* margin: 20px auto; */
+
+    /* MODO DE DESPLIEGUE */
+    display: grid;
+    grid-gap: 10px;
+
+    /* Defnicion de columnas y filas */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+/* Definicion de Estilo para Sub-Contenedores */
+
+#Contenedor .widget1,
+#Contenedor .widget2,
+#Contenedor #Barra_Lateral,
+#Contenedor #Contenido,
+#Contenedor #Pie_de_Pagina{
+
+    background: #E7F6F2;
+    padding: 20px;
+    color: rgb(66, 66, 66);
+    border-radius: 4px;
+}
+
+/* HEADER ----------------------- HEADER , CARRITO */
+#Contenedor #Header{
+    /* Definicion de Diseño */
+    background-color: #395B64;
+    
+    /* Abarcamos espacios con Grid */
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+/* HEADER ---- EDICION DE LOGO Y MAS */
+#Header{
+    /* Tamaño */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+
+}
+.Logo{
+    /* Tamaño */
+    padding: 5px;
+    height: 50px;
+    width: 200px;
+}
+
+/*  BUSCADOR - BOTON ICONO BARRA*/
+button.Boton_Busqueda{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    max-width: 100%;
+}
+/* Tamaño de INPUT Y DISEÑO */
+input.Input_Busqueda{
+   padding: 9px 10px 9px 32px;
+   outline: none;
+   font-size: 18px;
+   border-radius: 40px;
+   color: white;
+   background: #A5C9CA;
+   border: 2px solid #ececec;
+
+   background-color: transparent ;
+   width: 900px;
+   transition: all .5s;
+}
+
+/* APARTADO CARRITO - SUB HEADER */
+#Contenedor #Carrito{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+/* CONTENIDO  */
+#Contenedor #Contenido{
+    /* Se explande 2 */
+    grid-column: span 3;
+} 
+
+/* SLIDE --- BARRA LATERAL */
+#Contenedor #Barra_Lateral{
+    /* Espacio abarcado */
+    grid-column: 3/4;
+    grid-row: span 2;
+    /* Flex */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Contenedor .widget1
+#Contenedor .widget2{
+    background: #395B64;
+    color: white;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#Contenedor #Pie_de_Pagina{
+    /* Diseño */
+    background: #395B64;
+    color: white;
+    /* Espacio Abarcado */
+    grid-column: 1 /-1; 
+
+    /* TAMAÑO ADAPTADO CON RESPONSIVE */
+    min-height: 100px;
+}
+/* USUARIOO --------- */
+p.Usuario{
+    float: right;
+    padding: 15px 15px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+#Boton_Carrito{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    max-width: 100%;
+    padding: 10px;
+}
+
+#Boton_Carrito img{
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+/* ---- OPCIONES ----- */ 
+#Contenedor #Opciones{
+    /* Definicion de Diseño */
+    
+    /* Abarcamos espacios con Grid */
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#Opciones{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.Formato_Boton{
+    background-color: #256D85;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    max-width: 100%;
+    margin: 8px;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    
+    padding: 10px 32px;
+    border-radius: 40px;
+    
+}
+
+.Formato_Boton:hover {
+  background-color: #6C757D;
+  color: whitesmoke ; 
+}
+
+.Formato_Botones{
+    /* COPIA DE FORMATO_BOTONES PERO SIN COLOR DE TEXTO Y BACKGROUND */
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    max-width: 100%;
+    margin: 8px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    
+    padding: 10px 32px;
+    border-radius: 40px; 
+}
+
+.Formato_Botones:hover {
+    background-color: #6C757D;
+    color: whitesmoke ; 
+  }
+
+/* FIN HEADER----------------- */
+
+/* Contenido */
+#Preventa{
+    grid-column: span 3;  
+}
+
+.Boton_forms{
+    padding: 5px 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: darkcyan;
+    color: white;
+}
+
+.ocultos{
+
+    visibility: hidden;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;  /* Ocultar scroll */
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    #Contenedor #Contenido{
+        grid-column: 1 / -1;
+    }
+    #Contenedor #Pie_de_Pagina{
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+#imagen{
+    width: 100%;
+    height: 250px;
+    background-color: transparent;
+    background-image: url("./../Recursos/libros.jpg");
+}
+
+.c_btn_rec{
+    float: left;
+    padding: 1px 25px;
+    font-size: 15px;
+    background-color: darkcyan;
+    color: white;
+    margin-right: 30px;
+}
+
+#libros{
+    margin-top: 250px;
+}
+
+#pie{
+    margin-top: 200px;
+}
+
+#btn_inicio{
+    /*visibility: hidden;
+    display: none;*/
+}
+
+
