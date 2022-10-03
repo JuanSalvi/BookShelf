@@ -1,0 +1,8 @@
+https://www.gandhi.com.mx/el-italiano-4		italiano*
+https://www.gandhi.com.mx/caballo-de-troya-6-hermon		troya*
+https://www.gandhi.com.mx/una-novela-de-barrio-5		barrio*
+https://www.gandhi.com.mx/a-de-anonymous-novela-grafica-1		Anonymous*
+https://www.gandhi.com.mx/desarrollo-y-programacion-en-entornos-web		web*
+https://www.gandhi.com.mx/teoria-de-automatas-2		automatas*
+https://www.gandhi.com.mx/termodinamica-9788448128300		termodinamica*
+https://www.gandhi.com.mx/comunicaciones-y-redes-de-computadoras		redes*
