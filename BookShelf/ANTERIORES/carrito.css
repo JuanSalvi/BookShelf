@@ -1,0 +1,45 @@
+#libros_carrito{
+    float: left;
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    overflow-y: scroll;
+}
+
+#menu_carrito{
+    float: left;
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+}
+    #total{
+        float: left;
+        width: 50%;
+        height: 100%;
+        background-color: transparent;
+        font-size: 25px;
+        color: purple;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #pago{
+        float: left;
+        width: 50%;
+        height: 100%;
+        background-color: transparent;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .btn_pago{
+            float: right;
+            margin-right: 20px;
+            padding: 15px 15px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: darkslategray;
+            color: white;
+        }
